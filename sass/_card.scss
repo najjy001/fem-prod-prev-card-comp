@@ -1,0 +1,72 @@
+
+
+.card{
+    background-color: var(--white);
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 21.25rem;
+    
+    @media (min-width: 700px) {
+        flex-direction: row;
+        width: auto;
+    }
+
+    &__image{
+        background-image: url('../images/image-product-mobile.jpg');
+        background-position: center;
+        background-size: cover;
+        height: 15rem;
+        
+        @media (min-width: 700px) {
+            background-image: url('../images/image-product-desktop.jpg');
+            width: 300px;
+            height: auto;
+        }
+    }
+
+    &__text {
+        margin: 26px;
+    }
+
+    &__category {
+
+        font-weight: 100;
+        letter-spacing: 0.5rem;
+        color: var(--darkGrayishBlue);
+        margin-bottom: 1rem;
+    }
+
+    &__title {
+        color: var(--veryDarkBlue);
+        line-height: 1;
+        margin-bottom: 1.5rem;
+    }
+
+    &__description {
+        font-size: 0.75rem;
+        font-weight: 100;
+
+        margin-bottom: 3.25rem;
+    }
+
+    &__price{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 1.25rem;
+    }
+
+    &__current {
+        color: var(--darkCyan);
+        margin-right: 1.625rem;
+    }
+
+    &__origional {
+        color: var(--darkGreyishBlue);
+        font-weight: 100;
+        font-family: 'Noto Sans JP', sans-serif;
+        text-decoration: line-through;
+    }
+}
