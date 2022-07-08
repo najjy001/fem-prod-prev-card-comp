@@ -6,11 +6,12 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    width: 21.25rem;
+    width: 22.1875rem;
     
-    @media (min-width: 700px) {
+    @media (min-width: var(--break-point)) {
         flex-direction: row;
         width: auto;
+        width: 37.5rem
     }
 
     &__image{
@@ -19,7 +20,7 @@
         background-size: cover;
         height: 15rem;
         
-        @media (min-width: 700px) {
+        @media (min-width: var(--break-point)) {
             background-image: url('../images/image-product-desktop.jpg');
             width: 300px;
             height: auto;
@@ -27,35 +28,54 @@
     }
 
     &__text {
-        margin: 26px;
+        padding: 1.625rem;
+        @media (min-width: var(--break-point)) {
+            width: 300px;
+            height: auto;
+            padding: 2rem;
+        }
     }
 
     &__category {
 
         font-weight: 100;
-        letter-spacing: 0.5rem;
+        letter-spacing: 0.3rem;
         color: var(--darkGrayishBlue);
         margin-bottom: 1rem;
+
+        @media (min-width: var(--break-point)) {
+            margin-bottom: 1.5rem;
+        }
     }
 
     &__title {
         color: var(--veryDarkBlue);
         line-height: 1;
         margin-bottom: 1.5rem;
+
+        @media (min-width: var(--break-point)) {
+            margin-bottom: 2rem;
+        }
     }
 
     &__description {
-        font-size: 0.75rem;
-        font-weight: 100;
-
         margin-bottom: 3.25rem;
+        font-size: 13px;
+        letter-spacing: 0.2px;
+        @media (min-width: var(--break-point)) {
+            margin-bottom: 2.25rem;
+            font-size: 14px;
+        }
     }
 
     &__price{
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-bottom: 1.25rem;
+        margin-bottom: 1.5rem;
+        @media (min-width: var(--break-point)) {
+            margin-bottom: 2rem;
+        }
     }
 
     &__current {
@@ -66,7 +86,6 @@
     &__origional {
         color: var(--darkGreyishBlue);
         font-weight: 100;
-        font-family: 'Noto Sans JP', sans-serif;
         text-decoration: line-through;
     }
 }

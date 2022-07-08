@@ -9,7 +9,7 @@
     --ff-primary: 'Montserrat', sans-serif;
     --font-heading: 'Fraunces', serif;
 
-
+    --break-point: 43.75em;
 }
 
 body {
@@ -41,7 +41,7 @@ h1 {
     border: none;
     border-radius: 0.5rem;
     color: var(--white);
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: var(--ff-primary);
     font-weight: 700;
     letter-spacing: 0.09375rem;
     display: flex;
