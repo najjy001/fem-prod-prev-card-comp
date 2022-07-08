@@ -1,5 +1,6 @@
 :root {
     --darkCyan: hsl(158, 36%, 37%);
+    --darkCyanHover: hsl(158, 37%, 24%);
     --cream: hsl(30, 38%, 92%);
 
     --veryDarkBlue: hsl(212, 21%, 14%);
@@ -47,8 +48,14 @@ h1 {
     align-items: center;
     justify-content: center;
 
+    transition: background-color 200ms ease-in-out;
+
     img {
         margin-right: 0.625rem;
+    }
+
+    &:hover {
+        background-color: var(--darkCyanHover);
     }
 
 }
